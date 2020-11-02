@@ -3,11 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { SwitchComponent } from './switch/switch.component';
+import { CarousselComponent } from './caroussel/caroussel.component';
+import { KeyboardComponent } from './keyboard/keyboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SwitchComponent,
+    CarousselComponent,
+    KeyboardComponent
   ],
   imports: [
     BrowserModule

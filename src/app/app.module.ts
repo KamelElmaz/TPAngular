@@ -9,6 +9,10 @@ import { KeyboardComponent } from './keyboard/keyboard.component';
 import { PlayersComponent } from './players/players.component';
 import { PlayerComponent } from './player/player.component';
 import { PlayerFormComponent } from './player-form/player-form.component';
+import { JuvejerseyComponent } from './juvejersey/juvejersey.component';
+import { FlockingComponent } from './juvejersey/flocking/flocking.component';
+import { BasketComponent } from './juvejersey/basket/basket.component';
+import { ImageComponent } from './juvejersey/image/image.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { PlayerFormComponent } from './player-form/player-form.component';
     KeyboardComponent,
     PlayersComponent,
     PlayerComponent,
-    PlayerFormComponent
+    PlayerFormComponent,
+    JuvejerseyComponent,
+    FlockingComponent,
+    BasketComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule

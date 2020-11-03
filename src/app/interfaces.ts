@@ -1,8 +1,8 @@
 interface Player {
   firstName: string;
-  lastName: string;
+  lastName?: string;
   num?: number;
-  injured: boolean;
+  injured?: boolean;
 }
 
 export {Player};

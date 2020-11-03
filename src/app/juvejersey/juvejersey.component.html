@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juve shop</title>
+</head>
+<body>
+<h1>Juventus Home Authentic Jersey 2020/21</h1>
+<div id="app">
+  <div id="photoArea">
+    <img *ngIf="!state" src="assets/maillotJuve/3.jpg" />
+    <div id="thumbs">
+      <img src="assets/maillotJuve/1.jpg" />
+      <img src="assets/maillotJuve/2.jpg" />
+      <img src="assets/maillotJuve/3.jpg" />
+      <img src="assets/maillotJuve/4.jpg" />
+    </div>
+  </div>
+  <div id="settingArea">
+    <app-flocking></app-flocking>
+
+    <section>
+      <h3>Badges</h3>
+      <div id="badges">
+        <img src="assets/maillotJuve/badge1.jpg" alt="">
+        <img src="assets/maillotJuve/badge2.png" alt="">
+        <img src="assets/maillotJuve/badge3.jpg" alt="">
+      </div>
+      <div id="badgesSelector">
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+      </div>
+    </section>
+    <section>
+      <h3>Quantity</h3>
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </section>
+    <section>
+      <h3>Total price</h3>
+      <app-basket></app-basket>
+    </section>
+  </div>
+</div>
+</body>
+</html>

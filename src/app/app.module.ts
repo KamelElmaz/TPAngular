@@ -6,6 +6,9 @@ import { HeaderComponent } from './header/header.component';
 import { SwitchComponent } from './switch/switch.component';
 import { CarousselComponent } from './caroussel/caroussel.component';
 import { KeyboardComponent } from './keyboard/keyboard.component';
+import { PlayersComponent } from './players/players.component';
+import { PlayerComponent } from './player/player.component';
+import { PlayerFormComponent } from './player-form/player-form.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { KeyboardComponent } from './keyboard/keyboard.component';
     HeaderComponent,
     SwitchComponent,
     CarousselComponent,
-    KeyboardComponent
+    KeyboardComponent,
+    PlayersComponent,
+    PlayerComponent,
+    PlayerFormComponent
   ],
   imports: [
     BrowserModule

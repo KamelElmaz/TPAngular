@@ -21,10 +21,10 @@ export class PlayersComponent implements OnInit {
     this.players.push(p2);
     this.players.push(p3);
 
-    this.numInjuredPlayers = this.players.filter(p => p.injured).length;
+    this.onChange();
   }
 
-  test() {
-    console.log('le parent est notifié');
+  onChange() {
+    this.numInjuredPlayers = this.players.filter(p => p.injured).length;
   }
 }

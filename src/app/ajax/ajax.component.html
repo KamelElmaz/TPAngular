@@ -1,0 +1,4 @@
+<h2>Ajax Component</h2>
+<input (keyup)="test($event)" type="text"/>
+<p *ngFor="let todo of todos">{{todo.title}}
+<span *ngIf="todo.completed"> (termié) </span> </p>

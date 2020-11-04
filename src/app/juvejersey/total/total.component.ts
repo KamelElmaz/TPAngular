@@ -20,6 +20,10 @@ export class TotalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngDoCheck() {
+    this.computeTotal();
+  }
+
   selectQuantity(event: any){
     const qty: number = parseInt(event.target.value);
     this._qty = qty;

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,6 +11,8 @@ import { PlayersComponent } from './players/players.component';
 import { PlayerComponent } from './player/player.component';
 import { PlayerFormComponent } from './player-form/player-form.component';
 import {JuvejerseyModule} from './juvejersey/juvejersey.module';
+import { AjaxComponent } from './ajax/ajax.component';
+
 
 
 @NgModule({
@@ -21,11 +24,13 @@ import {JuvejerseyModule} from './juvejersey/juvejersey.module';
     KeyboardComponent,
     PlayersComponent,
     PlayerComponent,
-    PlayerFormComponent
+    PlayerFormComponent,
+    AjaxComponent
   ],
   imports: [
     BrowserModule,
-    JuvejerseyModule
+    JuvejerseyModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

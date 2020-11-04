@@ -1,0 +1,13 @@
+<div id="photoArea">
+
+  <div *ngIf="playerName" id="flockArea">
+    <div>{{playerName}}</div>
+    <div>{{playerNum}}</div>
+  </div>
+
+  <img [src]="images[selectedImage]" />
+  <div id="thumbs">
+    <img (click)="selectImage(i)" *ngFor="let image of images; let i=index" [src]=image />
+  </div>
+
+</div>

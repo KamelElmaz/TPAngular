@@ -5,11 +5,11 @@ import {Player} from '../interfaces';
   providedIn: 'root'
 })
 export class PlayersService {
-  private players: Player[] = [{firstName: 'Ramsey', num: 6}, {firstName: 'Ronaldo', num: 7}, {firstName: 'Chiesa', num: 22}, {firstName: 'Bonucci', num: 4}];
+  private players: string[] = ['7 - Ronaldo', '8 - Ramsey', '10 - Dybala'];
 
   constructor() { }
 
-  getPlayers(){
+  getPlayers(): string[] {
     return this.players;
   }
 }

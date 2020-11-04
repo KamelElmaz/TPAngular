@@ -1,0 +1,12 @@
+<section>
+  <h3>Flocking</h3>
+  <span class="flock" [ngClass]="{'selected': !isFlockedSelected}" (click)="selectFlock(false)">No flock</span>
+  <span class="flock" [ngClass]="{'selected': isFlockedSelected}" (click)="selectFlock(true)">Players</span>
+
+  <div *ngIf="isFlockedSelected">
+    <select (change)="selectPlayer($event)">
+      <option disabled>---Select a player---</option>
+      <option *ngFor="let player of players">{{player}}</option>
+    </select>
+  </div>
+</section>

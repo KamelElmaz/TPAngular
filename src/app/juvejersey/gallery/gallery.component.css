@@ -1,0 +1,25 @@
+#photoArea img {
+  width: 500px;
+  position: relative;
+}
+
+#photoArea {
+  position: relative;
+}
+
+#photoArea #thumbs img {
+  width: 75px
+}
+
+#photoArea, #settingsArea {
+  float: left;
+  padding: 4px
+}
+
+#flockArea {
+  font-size: 18pt;
+  position: absolute;
+  left: 200px;
+  top: 70px;
+  z-index: 1;
+}

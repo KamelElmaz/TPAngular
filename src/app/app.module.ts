@@ -12,6 +12,8 @@ import { PlayerComponent } from './player/player.component';
 import { PlayerFormComponent } from './player-form/player-form.component';
 import {JuvejerseyModule} from './juvejersey/juvejersey.module';
 import { AjaxComponent } from './ajax/ajax.component';
+import { AjaxPostComponent } from './ajax-post/ajax-post.component';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -25,12 +27,14 @@ import { AjaxComponent } from './ajax/ajax.component';
     PlayersComponent,
     PlayerComponent,
     PlayerFormComponent,
-    AjaxComponent
+    AjaxComponent,
+    AjaxPostComponent
   ],
   imports: [
     BrowserModule,
     JuvejerseyModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
